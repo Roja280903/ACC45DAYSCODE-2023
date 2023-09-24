@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; 
+
+    while (T--) {
+        int PA, PB, PC;
+        cin >> PA >> PB >> PC; 
+
+       
+        int max_people = min(PA, PC) + PB; 
+        cout << max_people << endl;
+    }
+
+    return 0;
+}
