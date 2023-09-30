@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; // Number of test cases
+
+    while (T--) {
+        int A, B, X, Y;
+        cin >> A >> B >> X >> Y; // Input values
+
+        int total_power_required = A * B;
+        int total_power_available = X * Y;
+
+        if (total_power_available >= total_power_required) {
+            cout << "Yes" << endl;
+        } else {
+            cout << "No" << endl;
+        }
+    }
+
+    return 0;
+}
