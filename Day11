@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; // Number of test cases
+
+    while (T--) {
+        int N, M;
+        cin >> N >> M; // Number of runs required and remaining overs
+
+        int max_runs_possible = M * 6; // Maximum runs possible in remaining overs
+
+        if (N <= max_runs_possible) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+
+    return 0;
+}
