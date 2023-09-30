@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; // Number of test cases
+
+    while (T--) {
+        int X, Y, Z;
+        cin >> X >> Y >> Z; // Input values
+
+        int time_to_hit = (Y / X) + Z; // Time taken by bullet to reach the goomba + additional time
+        cout << time_to_hit << endl;
+    }
+
+    return 0;
+}
