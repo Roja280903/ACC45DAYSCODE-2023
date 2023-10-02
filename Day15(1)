@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; // Number of test cases
+
+    while (T--) {
+        int N, X;
+        cin >> N >> X; // Total number of cards and number of face-up cards
+
+        // Calculate the minimum number of flips required
+        int flips = min(X, N - X);
+
+        cout << flips << endl; // Output the minimum flips
+    }
+
+    return 0;
+}
